@@ -14,6 +14,8 @@ import k from "./ab/11.jpg";
 import l from "./ab/12.jpg";
 import m from "./ab/13.jpg";
 import n from "./ab/14.jpg";
+import o from "./ab/15.jpg";
+import p from "./ab/16.jpg";
 
 function App() {
   const allParagraphs = [
@@ -43,6 +45,8 @@ function App() {
     { src: l, title: "Image 12 " },
     { src: m, title: "Image 13 " },
     { src: n, title: "Image 14 " },
+    { src: p, title: "Image 13 " },
+    { src: o, title: "Image 14 - I’ll be grateful to you for life. I was supposed to travel on this train, as my reservation was from Lucknow to Bhopal and then to MDS. But you were sick, and I couldn’t wait to board this train. So, a day before, I left Lucknow for Indore on another train, in general class (I guess you know how crowded Bihar trains can be). All thanks to you—if you hadn’t been unwell, I would have definitely boarded this train, and maybe I wouldn’t be here today" },
   ];
 
   const videos = [
@@ -95,11 +99,27 @@ function App() {
   const sr = [
     {
       src: "https://drive.google.com/file/d/1dEU4-09_vyezouTAbMFUWQRZtQy7N_11/preview",
-      title: "Screen Recording 1 ",
+      title: "Recording 1 ",
     },
     {
       src: "https://drive.google.com/file/d/1--BWrkF0XdXlgRMT6suCVAJyg0foJx0w/preview", 
-      title: "Screen Recording 2 ",
+      title: "Recording 2 ",
+    },
+    {
+      src: "https://drive.google.com/file/d/10-01ycJbUNViNKWpGFlFqxSY2zdqMiwU/preview", 
+      title: "Recording 2 ",
+    },
+    {
+      src: "https://drive.google.com/file/d/1071tXFX9aJdPj110p13Zmqg2Io5pPhy6/preview", 
+      title: "Recording 2 ",
+    },
+    {
+      src: "https://drive.google.com/file/d/1003fVs2NScO9jX7ObI0hdhJu4cqqiXtd/preview", 
+      title: "Recording 2 ",
+    },
+    {
+      src: "https://drive.google.com/file/d/1-4J4zol7tWuYf4umkVnRjq7DLXBlw4tl/preview", 
+      title: "Recording 2 ",
     },
   ];
 
@@ -184,7 +204,7 @@ function App() {
         </div>
       )}
 
-      <h2 onClick={() => toggleSection("recordings")}>Screen Recordings</h2>
+      <h2 onClick={() => toggleSection("recordings")}>Recordings</h2>
       {openSection === "recordings" && (
         <div className="section">
           {sr.map((recording, idx) => (
