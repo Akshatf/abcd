@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Analytics } from "@vercel/analytics/react"
 import "./App.css";
 import a from "./ab/1.jpg";
 import b from "./ab/2.jpg";
@@ -27,7 +28,7 @@ function App() {
     "> Below are some screen recordings or screenshots of how I felt and survived over the past few months — what I asked for (peace) and what I actually got. There's also a link — open it if you wish; if not, that's on you. I've even forgotten what was in it, because it was made a long time ago...",
     "> No need to contact me. I'M DEAD to you… unless and until… I'm have been / too soft for you  — so don't even try to manipulate me like others do.",
     "> Now, you don't have me backing you anymore. Hopefully, the replacement works well — maybe even better than me.",
-    "> Just try to realize how the hell you turned a happy soul into a walking corpse.",
+    "> Just try to realize how the hell you turned a happy soul into a *walking corpse*.",
   ];
 
   const images = [
@@ -98,7 +99,7 @@ function App() {
 
   const sr = [
     {
-      src: "https://drive.google.com/file/d/1dEU4-09_vyezouTAbMFUWQRZtQy7N_11/preview",
+      src: "https://drive.google.com/file/d/10-01ycJbUNViNKWpGFlFqxSY2zdqMiwU/preview", 
       title: "Recording 1 ",
     },
     {
@@ -106,20 +107,16 @@ function App() {
       title: "Recording 2 ",
     },
     {
-      src: "https://drive.google.com/file/d/10-01ycJbUNViNKWpGFlFqxSY2zdqMiwU/preview", 
-      title: "Recording 2 ",
-    },
-    {
       src: "https://drive.google.com/file/d/1071tXFX9aJdPj110p13Zmqg2Io5pPhy6/preview", 
-      title: "Recording 2 ",
+      title: "Recording 3 ",
     },
     {
       src: "https://drive.google.com/file/d/1003fVs2NScO9jX7ObI0hdhJu4cqqiXtd/preview", 
-      title: "Recording 2 ",
+      title: "Recording 4 ",
     },
     {
       src: "https://drive.google.com/file/d/1-4J4zol7tWuYf4umkVnRjq7DLXBlw4tl/preview", 
-      title: "Recording 2 ",
+      title: "Recording 5 ",
     },
   ];
 
