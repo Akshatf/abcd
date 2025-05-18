@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import a from "./ab/1.jpg";
 import b from "./ab/2.jpg";
@@ -46,8 +46,12 @@ function App() {
     { src: l, title: "Image 12 " },
     { src: m, title: "Image 13 " },
     { src: n, title: "Image 14 " },
-    { src: p, title: "Image 13 " },
-    { src: o, title: "Image 14 - I’ll be grateful to you for life. I was supposed to travel on this train, as my reservation was from Lucknow to Bhopal and then to MDS. But you were sick, and I couldn’t wait to board this train. So, a day before, I left Lucknow for Indore on another train, in general class (I guess you know how crowded Bihar trains can be). All thanks to you—if you hadn’t been unwell, I would have definitely boarded this train, and maybe I wouldn’t be here today" },
+    { src: p, title: "Image 15 " },
+    {
+      src: o,
+      title:
+        "Image 16 - I’ll be grateful to you for life. I was supposed to travel on this train...",
+    },
   ];
 
   const videos = [
@@ -99,28 +103,91 @@ function App() {
 
   const sr = [
     {
-      src: "https://drive.google.com/file/d/10-01ycJbUNViNKWpGFlFqxSY2zdqMiwU/preview", 
+      src: "https://drive.google.com/file/d/10-01ycJbUNViNKWpGFlFqxSY2zdqMiwU/preview",
       title: "Recording 1 ",
     },
     {
-      src: "https://drive.google.com/file/d/1--BWrkF0XdXlgRMT6suCVAJyg0foJx0w/preview", 
+      src: "https://drive.google.com/file/d/1--BWrkF0XdXlgRMT6suCVAJyg0foJx0w/preview",
       title: "Recording 2 ",
     },
     {
-      src: "https://drive.google.com/file/d/1071tXFX9aJdPj110p13Zmqg2Io5pPhy6/preview", 
+      src: "https://drive.google.com/file/d/1071tXFX9aJdPj110p13Zmqg2Io5pPhy6/preview",
       title: "Recording 3 ",
     },
     {
-      src: "https://drive.google.com/file/d/1003fVs2NScO9jX7ObI0hdhJu4cqqiXtd/preview", 
+      src: "https://drive.google.com/file/d/1003fVs2NScO9jX7ObI0hdhJu4cqqiXtd/preview",
       title: "Recording 4 ",
     },
     {
-      src: "https://drive.google.com/file/d/1-4J4zol7tWuYf4umkVnRjq7DLXBlw4tl/preview", 
+      src: "https://drive.google.com/file/d/1-4J4zol7tWuYf4umkVnRjq7DLXBlw4tl/preview",
       title: "Recording 5 ",
     },
+  ];
+
+  const instagramReels = [
     {
-      src: "https://drive.google.com/file/d/1-4J4zol7tWuYf4umkVnRjq7DLXBlw4tl/preview", 
-      title: "Recording 5 ",
+      title: "Reel 1",
+      link: "https://www.instagram.com/reel/DD9cMJ2JLen/?igsh=MWlhdzRvMmh1eWhzdg==",
+    },
+    {
+      title: "Reel 2",
+      link: "https://www.instagram.com/reel/C_7BS0lpr9E/?igsh=N3ExOXU3d3dzeHJo",
+    },
+    {
+      title: "Reel 3",
+      link: "https://www.instagram.com/reel/DBoncfCKdhA/?igsh=MTIzMzc3ejdsZGpxaQ==",
+    },
+    {
+      title: "Reel 4",
+      link: "https://www.instagram.com/reel/DISomvUz1wL/?igsh=cGg0b3p2djBlYTJr",
+    },
+    {
+      title: "Reel 5",
+      link: "https://www.instagram.com/reel/DFVMqojz6mC/?igsh=MWI5M3h1ODJoMHduaQ==",
+    },
+    {
+      title: "Reel 6",
+      link: "https://www.instagram.com/reel/DHq-qq3Sd8D/?igsh=ZWhzbHU4OG0xZzI0",
+    },
+    {
+      title: "Reel 7",
+      link: "https://www.instagram.com/reel/DGgCR6wNe04/?igsh=bXcwM2NxcTJrOXZ2",
+    },
+    {
+      title: "Reel 8",
+      link: "https://www.instagram.com/reel/DItq_K4TzN9/?igsh=MXFleTd3bG4zY3RqOQ==",
+    },
+    {
+      title: "Reel 9",
+      link: "https://www.instagram.com/p/DIeKbGzvMwo/?igsh=MWFweTRiM2pxbHpydw==",
+    },
+    {
+      title: "Reel 10",
+      link: "https://www.instagram.com/reel/DIWgLu8x-2c/?igsh=MW10MGk4MG1sbjd6cw==",
+    },
+    {
+      title: "Reel 11",
+      link: "https://www.instagram.com/reel/DC1q55KzCi6/?igsh=MnNjY3NwMG9pajN2",
+    },
+    {
+      title: "Reel 12",
+      link: "https://www.instagram.com/reel/DJHuM_3zagH/?igsh=bDF5dXdjaGp4MzBy",
+    },
+    {
+      title: "Reel 13",
+      link: "https://www.instagram.com/reel/DIbxwx6JRaQ/?igsh=eTYwbHY0Z25rdGpr",
+    },
+    {
+      title: "Reel 14",
+      link: "https://www.instagram.com/reel/DJHls_FyA16/?igsh=MmFhc3V5Z3AxMWhn",
+    },
+    {
+      title: "Reel 15 - Only till 0.9",
+      link: "https://www.instagram.com/reel/DIEGNpppEaX/?igsh=MWZneWpjcm03N3Jsdw==",
+    },
+    {
+      title: "Reel 16 - So me",
+      link: "https://www.instagram.com/reel/DJV7crSpuot/?igsh=MWMwcmdtY2l3aGJoYQ==",
     },
   ];
 
@@ -128,22 +195,24 @@ function App() {
   const [openMediaIndex, setOpenMediaIndex] = useState({
     photos: null,
     videos: null,
-    recordings: null
+    recordings: null,
+    reels: null,
   });
 
   const toggleSection = (section) => {
     setOpenMediaIndex({
       photos: null,
       videos: null,
-      recordings: null
+      recordings: null,
+      reels: null,
     });
     setOpenSection(openSection === section ? null : section);
   };
 
   const toggleMedia = (section, index) => {
-    setOpenMediaIndex(prev => ({
+    setOpenMediaIndex((prev) => ({
       ...prev,
-      [section]: prev[section] === index ? null : index
+      [section]: prev[section] === index ? null : index,
     }));
   };
 
@@ -164,20 +233,28 @@ function App() {
           {images.map((image, idx) => (
             <div key={idx} className="media-block">
               <h3 onClick={() => toggleMedia("photos", idx)}>{image.title}</h3>
-              <div className={`media-wrapper ${openMediaIndex.photos === idx ? "open" : ""}`}>
-                {openMediaIndex.photos === idx && (
-                  <div className="image-container">
-                    <img
-                      src={image.src}
-                      alt={image.title}
-                      onError={(e) => {
-                        e.target.onerror = null;
-                        e.target.src = ""; // Clear if error occurs
-                      }}
-                    />
-                  </div>
-                )}
-              </div>
+              {openMediaIndex.photos === idx && (
+                <img
+                  src={image.src}
+                  alt={image.title}
+                  className="image-container"
+                />
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+      <h2 onClick={() => toggleSection("instagram")}>Instagram</h2>
+      {openSection === "instagram" && (
+        <div className="section">
+          {instagramReels.map((reel, idx) => (
+            <div key={idx} className="media-block">
+              <h3 onClick={() => toggleMedia("reels", idx)}>{reel.title}</h3>
+              {openMediaIndex.reels === idx && (
+                <a href={reel.link} target="_blank" rel="noopener noreferrer">
+                  <button className="click-btn">Watch Reel</button>
+                </a>
+              )}
             </div>
           ))}
         </div>
@@ -189,17 +266,15 @@ function App() {
           {videos.map((video, idx) => (
             <div key={idx} className="media-block">
               <h3 onClick={() => toggleMedia("videos", idx)}>{video.title}</h3>
-              <div className={`media-wrapper ${openMediaIndex.videos === idx ? "open" : ""}`}>
-                {openMediaIndex.videos === idx && (
-                  <iframe
-                    title={video.title}
-                    src={video.src}
-                    width="100%"
-                    height="315"
-                    allowFullScreen
-                  ></iframe>
-                )}
-              </div>
+              {openMediaIndex.videos === idx && (
+                <iframe
+                  title={video.title}
+                  src={video.src}
+                  width="100%"
+                  height="315"
+                  allowFullScreen
+                ></iframe>
+              )}
             </div>
           ))}
         </div>
@@ -210,23 +285,22 @@ function App() {
         <div className="section">
           {sr.map((recording, idx) => (
             <div key={idx} className="media-block">
-              <h3 onClick={() => toggleMedia("recordings", idx)}>{recording.title}</h3>
-              <div className={`media-wrapper ${openMediaIndex.recordings === idx ? "open" : ""}`}>
-                {openMediaIndex.recordings === idx && (
-                  <iframe
-                    title={recording.title}
-                    src={recording.src}
-                    width="100%"
-                    height="315"
-                    allowFullScreen
-                  ></iframe>
-                )}
-              </div>
+              <h3 onClick={() => toggleMedia("recordings", idx)}>
+                {recording.title}
+              </h3>
+              {openMediaIndex.recordings === idx && (
+                <iframe
+                  title={recording.title}
+                  src={recording.src}
+                  width="100%"
+                  height="315"
+                  allowFullScreen
+                ></iframe>
+              )}
             </div>
           ))}
         </div>
       )}
-
       <p className="risk-warning">Open at own risk</p>
       <a
         href="https://chipper-smakager-fb2485.netlify.app/"
@@ -234,6 +308,7 @@ function App() {
       >
         <button className="click-btn">Click Me</button>
       </a>
+      <Analytics />
     </div>
   );
 }
