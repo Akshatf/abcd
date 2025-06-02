@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
 import "./App.css";
 import {
@@ -20,6 +20,29 @@ function MediaContent() {
     recordings: null,
     reels: null,
   });
+  const [currentTime, setCurrentTime] = useState(new Date());
+
+  // Update clock every second
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentTime(new Date());
+    }, 1000);
+
+    return () => {
+      clearInterval(timer);
+    };
+  }, []);
+
+  // Format Indian time
+  const formatIndianTime = (date) => {
+    return date.toLocaleTimeString('en-IN', {
+      timeZone: 'Asia/Kolkata',
+      hour12: true,
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+  };
 
   const toggleSection = (section) => {
     setOpenMediaIndex({
@@ -27,7 +50,7 @@ function MediaContent() {
       videos: null,
       recordings: null,
       reels: null,
-      rec:null
+      rec: null
     });
     setOpenSection(openSection === section ? null : section);
   };
@@ -51,7 +74,12 @@ function MediaContent() {
 
   return (
     <div className="App">
-    <h2 onClick={() => toggleSection("notes")}>Notes</h2>
+      {/* Clock in top left corner */}
+      <div className="clock-container">
+        <div className="clock">{formatIndianTime(currentTime)}</div>
+      </div>
+
+      <h2 onClick={() => toggleSection("notes")}>Notes</h2>
       {openSection === "notes" && (
         <div className="section">
           {all.map((para, idx) => (
@@ -80,22 +108,6 @@ function MediaContent() {
                   alt={image.title}
                   className="image-container"
                 />
-              )}
-            </div>
-          ))}
-        </div>
-      )}
-
-      <h2 onClick={() => toggleSection("instagram")}>Instagram</h2>
-      {openSection === "instagram" && (
-        <div className="section">
-          {instagramReels.map((reel, idx) => (
-            <div key={idx} className="media-block">
-              <h3 onClick={() => toggleMedia("reels", idx)}>{reel.title}</h3>
-              {openMediaIndex.reels === idx && (
-                <a href={reel.link} target="_blank" rel="noopener noreferrer">
-                  <button className="click-btn">Watch Reel</button>
-                </a>
               )}
             </div>
           ))}
@@ -159,6 +171,21 @@ function MediaContent() {
                   height="315"
                   allowFullScreen
                 ></iframe>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+      <h2 onClick={() => toggleSection("instagram")}>Instagram</h2>
+      {openSection === "instagram" && (
+        <div className="section">
+          {instagramReels.map((reel, idx) => (
+            <div key={idx} className="media-block">
+              <h3 onClick={() => toggleMedia("reels", idx)}>{reel.title}</h3>
+              {openMediaIndex.reels === idx && (
+                <a href={reel.link} target="_blank" rel="noopener noreferrer">
+                  <button className="click-btn">Watch Reel</button>
+                </a>
               )}
             </div>
           ))}
