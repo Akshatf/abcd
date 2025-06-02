@@ -4,38 +4,67 @@ export const allParagraphs = [
   "> Whatever it is, from now onwards, I'M DEAD to you ( May be already for you ). Just in case you ever think we can get back together for whole 4 days ikyk — even if it's after 10 years — the doors will always be open. Otherwise, it's nothing… just nothing.",
   "> I had one of your photos. I'll give that to Kanishka, so whenever you meet her, take it from her.",
   "> I don't know if it's right or wrong, but the things you got on 14th and 15th February — they should probably be thrown in the dustbin (or maybe they already have been, I don't know).",
-  "> Below are some screen recordings or screenshots of how I felt and survived over the past few months — what I asked for (peace) and what I actually got. There's also a link — open it if you wish; if not, that's on you. I've even forgotten what was in it, because it was made a long time ago...",
-  "> No need to contact me. I'M DEAD to you… unless and until… I'm have been / too soft for you  — so don't even try to manipulate me like others do.",
+  "> Below are some ( only 1% ik gonna hurt you so kept too short ) screen recordings or screenshots of how I felt and survived over the past few months — what I asked for (peace) and what I actually got. There's also a link — open it if you wish; if not, that's on you. I've even forgotten what was in it, because it was made a long time ago...",
+  "> No need to contact me (Ik you'll not even if I'll die or there's any emergency , keep your ego with you ). I'M DEAD to you… unless and until… I'm have been / too soft for you  — so don't even try to manipulate me like others do.",
   "> Now, you don't have me backing you anymore. Hopefully, the replacement works well — maybe even better than me.",
   "> Just try to realize how the hell you turned a happy soul into a *walking corpse*.",
 ];
+export const paragraphs = [
+  "Hy, I don't know how you're, how you had'been meanwhile, hopefully the best",
+  "It's been a while I don't know anything about you in this, hoping you were not sick in this time...wishing you health and wealth",
+  "None the less but be happy always",
+  "Just wanted last favor from you for me - please block me on the whsp/nrml, I can't disregard....",
+];
+export const al = [
+  "> I know you have completely forgotten me — still disturbing you again",
+  "> I guess you know what to do (pre-requisites)",
+  "> It'll take a minimum of 4 to 5 hours, so...",
+  ">  If recorded by OBS ,the recording may be done for the whole time or not - you can do it in parts (1 hour separate segments and upload) or as a single recording (parts might be better, I guess), but only in one sitting",
+  "> You need to pause the videos and see/read",
+  "> If any video buffer or just load than don't refresh , just simply fast forwrd 5 seconds and even after that it doesn't resolve than on previous page there is another link go onto that and ensure OBS is on in every 1 hr ",
+  "> Keep your laptop charger with you",
+  "> Instagram reels can't be recored by inbuilt recorder so use deny the camera persmission and start recording by OBS Studio",
+  "> If the recording are not uploading than also do the same, use OBS ",
+  "> To upload the OBS Recording link is on previous page",
+  "> Ensure no power (battery) Failure",
+  `> On the top left you'll see "Recording part 1234 uploaded successfully" (once in every 4 min) if not than use OBS" `,
+  "> Just a wrap-up - no need to cry (stay strong and happy)",
+];
 export const all = [
-  "I know you have completely forgotten me — still disturbing you again",
-  "It'll take a minimum of 4 to 5 hours, so...",
-  "The recording may be done for the whole time or not - you can do it in parts (1 hour separate segments and upload) or as a single recording (parts might be better, I guess), but only in one sitting",
-  "Keep your laptop charger with you",
-  "Just a wrap-up - no need to cry (stay strong and happy)",
-  "I guess you know what to do (pre-requisites)"
+  "> I know you've completely forgotten me — still, I'm disturbing you again.",
+  "> I guess you know what to do (prerequisites).",
+  "> It’ll take a minimum of 4 to 5 hours, so....",
+  "> If recorded with OBS, the recording might cover the entire session or not — you can do it in parts (separate 1-hour segments and upload them) or as a single recording. Parts might be better, I guess, but do it in one sitting.",
+  "> You need to pause the videos and read/watch carefully.",
+  "> If any video buffers or just loads, don’t refresh. Simply fast-forward 5 seconds. If that doesn’t work, go to the previous page where there’s another link.Ypu need to record with OBS in that, inbuilt recorder is not there, Make sure OBS is running every hour.",
+  "> Keep your laptop charger with you.",
+  "> Instagram Reels can’t be recorded using the inbuilt recorder, so deny camera permissions and start recording using OBS Studio or go on previous and view the recordings",
+  "> If the recordings are not uploading, do the same — use OBS.",
+  "> To upload the OBS recording, the google link is on the previous page.",
+  "> Ensure there’s no power or battery failure.",
+  `> On the top left, you'll see "Recording part 1234 uploaded successfully" (once every 4 minutes). If not, use OBS.`,
+  "> Just a wrap-up — no need to cry. Stay strong and happy.",
 ];
 
+
 export const images = [
-  { src: "1.jpg", title: "Image 1 " },
-  { src: "2.jpg", title: "Image 2 " },
-  { src: "3.jpg", title: "Image 3 " },
-  { src: "4.jpg", title: "Image 4 " },
-  { src: "5.jpg", title: "Image 5 " },
-  { src: "6.jpg", title: "Image 6 " },
-  { src: "7.jpg", title: "Image 7 " },
-  { src: "8.jpg", title: "Image 8 " },
-  { src: "9.jpg", title: "Image 9 " },
-  { src: "10.jpg", title: "Image 10 " },
-  { src: "11.jpg", title: "Image 11 " },
-  { src: "12.jpg", title: "Image 12 " },
-  { src: "13.jpg", title: "Image 13 " },
-  { src: "14.jpg", title: "Image 14 " },
-  { src: "16.jpg", title: "Image 15 " },
+  { src: "ab/1.jpg", title: "Image 1 " },
+  { src: "ab/2.jpg", title: "Image 2 " },
+  { src: "ab/3.jpg", title: "Image 3 " },
+  { src: "ab/4.jpg", title: "Image 4 " },
+  { src: "ab/5.jpg", title: "Image 5 " },
+  { src: "ab/6.jpg", title: "Image 6 " },
+  { src: "ab/7.jpg", title: "Image 7 " },
+  { src: "ab/8.jpg", title: "Image 8 " },
+  { src: "ab/9.jpg", title: "Image 9 " },
+  { src: "ab/10.jpg", title: "Image 10 " },
+  { src: "ab/11.jpg", title: "Image 11 " },
+  { src: "ab/12.jpg", title: "Image 12 " },
+  { src: "ab/13.jpg", title: "Image 13 " },
+  { src: "ab/14.jpg", title: "Image 14 " },
+  { src: "ab/16.jpg", title: "Image 15 " },
   {
-    src: "15.jpg",
+    src: "ab/15.jpg",
     title: "Image 16 - I'll be grateful to you for life. I was supposed to travel on this train...",
   },
 ];
@@ -210,4 +239,56 @@ export const instagramReels = [
     title: "Reel 16 - So me",
     link: "https://www.instagram.com/reel/DJV7crSpuot/?igsh=MWMwcmdtY2l3aGJoYQ==",
   },
+  {
+    title: "Reel 17",
+    link: "https://www.instagram.com/reel/DInQpaop_ZO/?igsh=OW82YW1zd2pkdTN6",
+  },
+  {
+    title: "Reel 18",
+    link: "https://www.instagram.com/reel/DIk_tyVB6--/?igsh=ZGNhNXRxMzNjZXRy",
+  },
+  {
+    title: "Reel 19",
+    link: "https://www.instagram.com/reel/DHopgjLTrq9/?igsh=ZWxqeXI0aW9wOGM5",
+  },
+  {
+    title: "Reel 20",
+    link: "https://www.instagram.com/reel/DFNUHyszw_p/?igsh=anZicTdjaXp2ajNx",
+  },
+  {
+    title: "Reel 21",
+    link: "https://www.instagram.com/reel/DJd5gfUxx_8/?igsh=MXIwYmJrczh0bnIzOA%3D%3D",
+  },
+  {
+    title: "Reel 22",
+    link: "https://www.instagram.com/reel/DJetP6spcYm/?igsh=MTd6N2N6emdod2tkOQ%3D%3D",
+  },
+  {
+    title: "Reel 23",
+    link: "https://www.instagram.com/reel/DJWiOhgyHT2/?igsh=MWp4MmhoanI0MnhnaQ%3D%3D",
+  },
+  {
+    title: "Reel 24",
+    link: "https://www.instagram.com/reel/DJ1rXbtz2hw/?igsh=ejZzYjd1aGx0aGw3",
+  },
+  {
+    title: "Reel 25",
+    link: "https://www.instagram.com/reel/DJ4IJiBoDY-/?igsh=eWpkMjJ5NGc2bHE2",
+  },
+  {
+    title: "Reel 26",
+    link: "https://www.instagram.com/reel/DJ-0UAKSMYi/?igsh=MXU1MTBhbWo4bnZlMA%3D%3D",
+  },
+  {
+    title: "Reel 27",
+    link: "https://www.instagram.com/reel/DJZfRDyOba5/?igsh=NHl6b3RyZjBobnA1",
+  },
+  {
+    title: "Reel 28",
+    link: "https://www.instagram.com/reel/DJ-vIQ8IVWR/?igsh=YzY1N3J5eXA2aThl",
+  },
+  // {
+  //   title: "Reel 29",
+  //   link: "",
+  // },
 ];

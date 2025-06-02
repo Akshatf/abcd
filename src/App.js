@@ -8,10 +8,11 @@ import {
   sr,
   gola,
   all,
+  paragraphs,
   instagramReels,
 } from "./data";
 
-function App() {
+function MediaContent() {
   const [openSection, setOpenSection] = useState(null);
   const [openMediaIndex, setOpenMediaIndex] = useState({
     photos: null,
@@ -163,6 +164,14 @@ function App() {
           ))}
         </div>
       )}
+      <h2 onClick={() => toggleSection("paragraph")}>Me</h2>
+      {openSection === "paragraph" && (
+        <div className="section">
+          {paragraphs.map((para, idx) => (
+            <p key={idx}>{para}</p>
+          ))}
+        </div>
+      )}
 
       <p className="risk-warning">Open at own risk -- Even I forgot when I made this </p>
       <a
@@ -176,4 +185,4 @@ function App() {
   );
 }
 
-export default App;
+export default MediaContent;
