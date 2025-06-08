@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import ReactGA from "react-ga4"; // Added for GA4
 import "./App.css";
 import {
   allParagraphs,
@@ -12,6 +13,9 @@ import {
   instagramReels,
 } from "./data";
 
+// Initialize GA4 with your Measurement ID
+ReactGA.initialize("G-BV7PLF31KZ");
+
 function MediaContent() {
   const [openSection, setOpenSection] = useState(null);
   const [openMediaIndex, setOpenMediaIndex] = useState({
@@ -22,8 +26,15 @@ function MediaContent() {
   });
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  // Update clock every second
+  // Track page views and query parameters on initial load and route changes
   useEffect(() => {
+    // Send pageview to GA4 (includes query params like ?src=resume)
+    ReactGA.send({
+      hitType: "pageview",
+      page: window.location.pathname + window.location.search,
+    });
+
+    // Update clock every second
     const timer = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
