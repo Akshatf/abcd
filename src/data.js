@@ -2,7 +2,7 @@ export const allParagraphs = [
   "> I never ever wanted to do this, but yes, I'm being forced to. You should know how much you've destroyed my mental and emotional health, and how well you played with my emotions.",
   "> Yes, I never wanted to hurt you. I always wanted to see you happy. Even while doing this, there's a fight going on between my mind and heart — wondering if I should share this, knowing it will surely affect you...",
   "> Whatever it is, from now onwards, I'M DEAD to you ( May be already for you ). Just in case you ever think we can get back together for whole 4 days ikyk — even if it's after 10 years — the doors will always be open. Otherwise, it's nothing… just nothing.",
-  "> I had one of your photos. I'll give that to Kanishka, so whenever you meet her, take it from her.",
+  "> I had one of your photos. I've gave that to Kanishka, so whenever you meet her, take it from her.",
   "> I don't know if it's right or wrong, but the things you got on 14th and 15th February — they should probably be thrown in the dustbin (or maybe they already have been, I don't know).",
   "> Below are some ( only 1% ik gonna hurt you so kept too short ) screen recordings or screenshots of how I felt and survived over the past few months — what I asked for (peace) and what I actually got. There's also a link — open it if you wish; if not, that's on you. I've even forgotten what was in it, because it was made a long time ago...",
   "> No need to contact me (Ik you'll not even if I'll die or there's any emergency , keep your ego with you ). I'M DEAD to you… unless and until… I'm have been / too soft for you  — so don't even try to manipulate me like others do.",
@@ -63,9 +63,10 @@ export const images = [
   { src: "13.jpg", title: "Image 13 " },
   { src: "14.jpg", title: "Image 14 " },
   { src: "16.jpg", title: "Image 15 " },
+  { src: "i.jpg", title: "Image 16 " },
   {
     src: "15.jpg",
-    title: "Image 16 - I'll be grateful to you for life. I was supposed to travel on this train...",
+    title: "Image 17 - I'll be grateful to you for life. I was supposed to travel on this train...",
   },
 ];
 
@@ -140,6 +141,10 @@ export const sr = [
   {
     src: "https://drive.google.com/file/d/1A_HnRJbrrphcae-ripSKUECr0gvpObQ5/preview",
     title: "w-m-3",
+  },
+  {
+    src: "https://drive.google.com/file/d/1-ACYaARMY72Zd_Fj3mVfC3ExGcAZimYn/preview",
+    title: "w-m-4",
   },
 ];
 
@@ -221,7 +226,7 @@ export const instagramReels = [
   },
   {
     title: "Reel 12",
-    link: "https://www.instagram.com/reel/DJHuM_3zagH/?igsh=bDF5dXdjaGp4MzBy",
+    link: "https://www.instagram.com/reel/DJ-vIQ8IVWR/?igsh=YzY1N3J5eXA2aThl",
   },
   {
     title: "Reel 13",
@@ -285,10 +290,112 @@ export const instagramReels = [
   },
   {
     title: "Reel 28",
-    link: "https://www.instagram.com/reel/DJ-vIQ8IVWR/?igsh=YzY1N3J5eXA2aThl",
+    link: "https://www.instagram.com/reel/DHREo-jNnwG/?igsh=MTk2cHd4MjZmdXBlbA==",
+  },
+  {
+    title: "Reel 29",
+    link: "https://www.instagram.com/reel/DKSJ9qVSHNt/?igsh=MzUxcXY3YWtlcTRq",
+  },
+  {
+    title: "Reel 30",
+    link: "https://www.instagram.com/reel/DKaKS1DSTwJ/?igsh=MWlxcXU1c2Exa3d0cA%3D%3D",
+  },
+  {
+    title: "Reel 32",
+    link: "https://www.instagram.com/reel/DKcj4Zhz8N0/?igsh=MWs3ZWEzdW4ybGN5dw%3D%3D",
+  },
+  {
+    title: (
+      <>
+        Reel 33 - Last liness... Btw I'm MR.{" "}
+        <span className="overline-akf">AKF</span> FOOL
+      </>
+    ),
+    link: "https://www.instagram.com/reel/DKwxU5btbWB/?igsh=MXg3Z24ycDgzNDI1ZQ%3D%3D",
+  },
+
+  {
+    title: "Reel 34 - Hihi mujhe puchne tk ka chance ni mila",
+    link: "https://www.instagram.com/reel/DKsKxN8SCfL/?igsh=eXU2Y3MzdmxpN2F5",
+  },
+  {
+    title: "Reel 35",
+    link: "https://www.instagram.com/reel/DK1cdBcP59a/?igsh=MWdlaXhqaTVsZjZuZw==",
   },
   // {
-  //   title: "Reel 29",
+  //   title: "Reel 35",
+  //   link: "https://www.instagram.com/reel/DKetzxrRBy4/?igsh=ODU5ZzA4eDF4eTdu",
+  // },
+  {
+    title: "Reel 36",
+    link: "https://www.instagram.com/reel/DGJCCxTh4sX/?igsh=aHJxY3RhaXExbnY4",
+  },
+  {
+    title: "Reel 37",
+    link: "https://www.instagram.com/reel/DJtz92_z-k5/?igsh=bnZ3aGF5dWptMjIx",
+  },
+  {
+    title: "Reel 38 ik my fault",
+    link: "https://www.instagram.com/reel/DJrOWYnt16_/?igsh=bmh2ejZ3aDE0czkw",
+  },
+  {
+    title: "Reel 39",
+    link: "https://www.instagram.com/reel/DFlDOdgTCII/?igsh=eWh0ODZvcDhxc21y",
+  },
+  // {
+  //   title: "Reel 40",
+  //   link: "https://www.instagram.com/reel/DHWH2jFzrJH/?igsh=cmF6dWhnM2Y3bHo3",
+  // },
+    {
+    title: "Reel 40",
+    link: "https://www.instagram.com/reel/DJraTBeznZ1/?igsh=amRzODB5cjAycGll",
+  },
+  {
+    title: "Reel 41",
+    link: "https://www.instagram.com/reel/DJfNTSQzbtp/?igsh=MXFsZDR6a213bjI5ZQ==",
+  },
+  {
+    title: "Reel 42",
+    link: "https://www.instagram.com/reel/DD2Ar70hztU/?igsh=bG94YjZjaHRsMXRx",
+  },
+  {
+    title: "Reel 43",
+    link: "https://www.instagram.com/reel/DKv_QW5ofPu/?igsh=N20xM3YzMnI2aWZp",
+  },
+  {
+    title: "Reel 44",
+    link: "https://www.instagram.com/reel/DGP9rYoPfOo/?igsh=NjhqcXh3NTA2aWly",
+  },
+  {
+    title: "Reel 45- IG LAST LINES",
+    link: "https://www.instagram.com/reel/DHyTFt4p2ng/?igsh=MzVocmVvbGhlZXZr",
+  },
+  {
+    title: "Reel 46",
+    link: "https://www.instagram.com/reel/DKza-EtNJK4/?igsh=MXRjOGR4MjMzZXZwcA%3D%3D",
+  },
+  // {
+  //   title: "Reel 45",
+  //   link: "",
+  // },
+  // {
+  //   title: "Reel 46",
+  //   link: "",
+  // },
+  // {
+  //   title: "Reel 47",
+  //   link: "",
+  // },
+  // {
+  //   title: "Reel 48",
+  //   link: "",
+  // },
+  // {
+  //   title: "Reel 49",
+  //   link: "",
+  // },
+  // {
+  //   title: "Reel 50",
   //   link: "",
   // },
 ];
